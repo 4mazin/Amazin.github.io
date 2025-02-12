@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>AMAZIN'S PORTFOLIO</title>
@@ -11,171 +6,196 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+
+        #wrapper {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+			/* Tab Styling */
+			.tabs {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+			.tab-label {
+				padding: 10px 20px;
+				cursor: pointer;
+				background: #ddd;
+				border: 1px solid #aaa;
+				margin: 0 5px;
+				display: inline-block;
+			}
+			input[type="radio"] {
+				display: none;
+			}
+			.tab-content {
+				display: none;
+				padding: 20px;
+				border: 1px solid #aaa;
+				background: #f9f9f9;
+			}
+			/* Show content when the corresponding tab is checked */
+			#tab1:checked ~ #content1,
+			#tab2:checked ~ #content2,
+			#tab3:checked ~ #content3,
+			#tab4:checked ~ #content4,
+			#tab5:checked ~ #content5 {
+				display: block;
+			}
+			/* Highlight active tab */
+			#tab1:checked ~ .tabs label[for="tab1"],
+			#tab2:checked ~ .tabs label[for="tab2"],
+			#tab3:checked ~ .tabs label[for="tab3"],
+			#tab4:checked ~ .tabs label[for="tab4"],
+			#tab5:checked ~ .tabs label[for="tab5"] {
+				background: #555;
+				color: white;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>AMAZIN'S PORTFOLIO</h1>
-						<p>@AMAZIN</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">AMAZIN</a>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">AMAZIN</a>
-					</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">Projects</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/mazen-khaled-971310268/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">Linked-in</span></a></li>
+					<li><a href="https://github.com/4mazin" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/mazen-khaled-971310268/" class="icon brands alt fa-linkedin"  target="_blank"><span class="label">Linked-in</span></a></li>
-							<li><a href="https://github.com/4mazin" class="icon brands alt fa-github"  target="_blank"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/4mazin/Data_Cleaning"  target="_blank">All My Data Cleaning<br /></a></h2>
-
-								</header>
-								<a href="https://github.com/4mazin/Data_Cleaning" class="image main"  target="_blank"><img src="images/Housing.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/4mazin/Data_Cleaning" class="button large"  target="_blank">View Projects</a></li>
-								</ul>
-							</article>
-
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/4mazin/Data_Mining_Tasks"  target="_blank">All My Data Mining Tasks<br /></a></h2>
-								</header>
-								<a href="https://github.com/4mazin/Data_Mining_Tasks" class="image main"  target="_blank"><img src="images/Data_Mining.jpeg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/4mazin/Data_Mining_Tasks" class="button large"  target="_blank">View Projects</a></li>
-								</ul>
-								
-							</article>
+			<!-- Main -->
+			<div id="main">
+				<!-- Tabs for different projects -->
+				<input type="radio" id="tab1" name="tabs" checked>
+				<input type="radio" id="tab2" name="tabs">
+				<input type="radio" id="tab3" name="tabs">
+				<input type="radio" id="tab4" name="tabs">
+				<input type="radio" id="tab5" name="tabs">
 
 
-							<article>
-								<header class="major">
-									
-									<h2><a href="https://github.com/4mazin/Data_Exploration"  target="_blank">All My Data Exploration<br /></a></h2>
-								</header>
-								<a href="https://github.com/4mazin/Data_Exploration" class="image main"  target="_blank"><img src="images/Data_Exploration.jpeg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/4mazin/Data_Exploration" class="button large"  target="_blank">View Projects</a></li>
-								</ul>
-							</article>
+				<div class="tabs">
+					<label for="tab1" class="tab-label">Data Cleaning</label>
+					<label for="tab2" class="tab-label">Data Exploration</label>
+					<label for="tab3" class="tab-label">Machine Learning And AI Projects </label>
+					<label for="tab4" class="tab-label">Visualizations</label>
+					<label for="tab5" class="tab-label">Full Projects</label> <!-- New Tab -->
+				</div>
 
-							<article>
-								<header>
-								
-									<h2 style="text-align: center;"><a href="https://public.tableau.com/app/profile/mazen.khaled1663/vizzes"  target="_blank">Tableau Projects<br /></a></h2>
-								</header>
-								<a href="https://public.tableau.com/app/profile/mazen.khaled1663/vizzes" class="image fit"  target="_blank"><img src="images/Tableau2.jpg" alt="" width="500" height="1000" /></a>
-								<ul class="actions special">
-									<li><a href="https://public.tableau.com/app/profile/mazen.khaled1663/vizzes" class="button"  target="_blank">View Projects</a></li>
-								</ul>
-							</article>
+				<!-- Tab Content -->
+				<div id="content1" class="tab-content">
+					<h2 style="text-align: center;">Data Cleaning</h2>
+					<a href="https://github.com/4mazin/Data_Cleaning" class="image main" target="_blank"><img src="images/Housing.jpg" alt="" /></a>
+					<ul class="actions special">
+						<li><a href="https://github.com/4mazin/Data_Cleaning" class="button large" target="_blank">View Projects</a></li>
+					</ul>
+				</div>
 
-							<article>
-								<header>
-								
-									<h2 style="text-align: center;"><a href="https://app.powerbi.com/groups/me/list?experience=power-bi"  target="_blank">Power-Bi Projects<br /></a></h2>
-								</header>
-								<a href="https://app.powerbi.com/groups/me/list?experience=power-bi" class="image fit"  target="_blank"><img src="images/Power-Bi.png" alt="" width="200" height="600" /></a>
+				<div id="content2" class="tab-content">
+					<h2 style="text-align: center;">Data Exploration</h2>
+					<a href="https://github.com/4mazin/Data_Exploration" class="image main" target="_blank"><img src="images/Data_Exploration.jpeg" alt="" /></a>
+					<ul class="actions special">
+						<li><a href="https://github.com/4mazin/Data_Exploration" class="button large" target="_blank">View Projects</a></li>
+					</ul>
+				</div>
 
-								<ul class="actions special">
-									<li><a href="https://app.powerbi.com/groups/me/list?experience=power-bi" class="button"  target="_blank">View Projects</a></li>
-								</ul>
-							</article>
+				<div id="content3" class="tab-content">
+					<h2 style="text-align: center;">Data Mining Tasks</h2>
+					<a href="https://github.com/4mazin/Data_Mining_Tasks" class="image main" target="_blank"><img src="images/Data_Mining.jpeg" alt="" /></a>
+					<ul class="actions special">
+						<li><a href="https://github.com/4mazin/Data_Mining_Tasks" class="button large" target="_blank">View Projects</a></li>
+					</ul>
 
-							
-							<h1 style="text-align: center; color: #000;"  >Covid-19_Project</h1>
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2 style="text-align: center;"><a href="https://public.tableau.com/app/profile/mazen.khaled1663/viz/Covid-19_Dashboard_17281283226030/Dashboard1" target="_blank" >Covid-19 Tableau Project<br /></a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/mazen.khaled1663/viz/Covid-19_Dashboard_17281283226030/Dashboard1" class="image fit"  target="_blank"><img src="images/Feature-Photo-Tableau.png" alt="" /></a>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/mazen.khaled1663/viz/Covid-19_Dashboard_17281283226030/Dashboard1" class="button"  target="_blank">View Project</a></li>
-									</ul>
-								
-								</article>
-								<article>
-									<article>
-										<header>
-											<h2><a href="https://github.com/4mazin/Data_Exploration/blob/main/Covid-19_DataExploration.sql"  target="_blank">Data Exploration Of Covid-19 Dataset In SQL </a></h2>
-										</header>
-										<a href="https://github.com/4mazin/Data_Exploration/blob/main/Covid-19_DataExploration.sql" class="image fit"  target="_blank"><img src="images/Housing.jpg" alt="" /></a>
+					<!-- Separator -->
+					<hr>
 
-										<ul class="actions special">
-											<li><a href="https://github.com/4mazin/Portfolio_Projects/blob/main/Covid-19_DataExploration.sql" class="button"  target="_blank">View Project</a></li>
-										</ul>
-									</article>
-									
+					<h2 style="text-align: center;">Pente Board Game</h2>
+					<a href="https://github.com/4mazin/AI/blob/main/Pente_Board.ipynb" class="image main" target="_blank"><img src="images/Pente.webp" alt="" /></a>
+					<ul class="actions special">
+						<li><a href="https://github.com/4mazin/AI/blob/main/Pente_Board.ipynb" class="button large" target="_blank">View Project</a></li>
+					</ul>
 
+					<!-- Separator -->
+					<hr>
+
+				</div>
+
+				<div id="content4" class="tab-content">
+					<h2 style="text-align: center;">Visualizations</h2>
+					<a href="https://public.tableau.com/app/profile/mazen.khaled1663/vizzes" class="image fit" target="_blank"><img src="images/Tableau2.jpg" alt="" width="500" height="1000" /></a>
+					<ul class="actions special">
+						<li><a href="https://public.tableau.com/app/profile/mazen.khaled1663/vizzes" class="button" target="_blank">View Projects</a></li>
+					</ul>
+
+					<a href="https://app.powerbi.com/groups/me/list?experience=power-bi" class="image fit" target="_blank"><img src="images/Power-Bi.png" alt="" width="200" height="600" /></a>
+					<ul class="actions special">
+						<li><a href="https://app.powerbi.com/groups/me/list?experience=power-bi" class="button" target="_blank">View Projects</a></li>
+					</ul>
+				</div>
+
+				<div id="content5" class="tab-content">
+					<h2 style="text-align: center;">Covid-19 Project</h2>
+
+					<a href="https://github.com/4mazin/Data_Exploration/blob/main/Covid-19_DataExploration.sql" class="image fit" target="_blank">
+						<img src="images/Housing.jpg" alt="" />
+					</a>
+					<ul class="actions special">
+						<li><a href="https://github.com/4mazin/Data_Exploration/blob/main/Covid-19_DataExploration.sql" class="button" target="_blank">View SQL Exploration</a></li>
+					</ul>
+
+					<a href="https://public.tableau.com/app/profile/mazen.khaled1663/viz/Covid-19_Dashboard_17281283226030/Dashboard1" class="image fit" target="_blank">
+						<img src="images/Feature-Photo-Tableau.png" alt="" />
+					</a>
+					<ul class="actions special">
+						<li><a href="https://public.tableau.com/app/profile/mazen.khaled1663/viz/Covid-19_Dashboard_17281283226030/Dashboard1" class="button" target="_blank">View Dashboard</a></li>
+					</ul>
 				
-								</section>
-							
-
-
-									
-
-								
-
-					
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Giza<br /></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">mazenaizo90@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/mazen-khaled-971310268/" class="icon brands alt fa-linkedin"  target="_blank"><span class="label">Linked-in</span></a></li>
-									<li><a href="https://github.com/4mazin" class="icon brands alt fa-github" target="_blank"><span class="label" >GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+					<!-- Separator -->
+					<hr>
+				
+				</div>
 
 			</div>
 
+			<!-- Footer -->
+			<footer>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Address</h3>
+						<p>Giza<br /></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">mazenaizo90@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/mazen-khaled-971310268/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">Linked-in</span></a></li>
+							<li><a href="https://github.com/4mazin" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
